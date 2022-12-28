@@ -1,5 +1,6 @@
 import "./storeitem.css"
 import { formatCurrency } from "../utilities/formatCurrency"
+import { useShoppingCart } from "../context/ShoppingCartContext"
 
 type StoreItemProps = {
  id: number,
@@ -10,7 +11,13 @@ type StoreItemProps = {
 
 
 export function StoreItem ({id, name, price, imgUrl}: StoreItemProps) {
-   const quantity = 0;
+  
+   const {getItemQuantity,
+    increaseCartQuantity,
+    decreaseCartQuantity,
+    removeFromCart} = useShoppingCart()
+
+    const quantity = getItemQuantity(id);
    
     return (
         <div className="card-item">
@@ -26,20 +33,27 @@ export function StoreItem ({id, name, price, imgUrl}: StoreItemProps) {
                 quantity === 0 ?
 
                ( 
-               <><div className="card-item-actions">
-                <button className="button-card"> - </button>
-                {quantity} in cart
-                <button className="button-card"> +</button>
-            </div>
-            <button className="button-card">Remove</button>
-</>
+                <div className="card-item-actions">
+                <button onClick={() => increaseCartQuantity(id)}>
+                    Add to Cart
+                </button>
+                </div>
         )
         :
-(        <div className="card-item-actions">
-    <button>
-        Add to Cart
-    </button>
-    </div>
+(  
+    <><div className="card-item-actions">
+    <button className="button-card"
+    onClick={() => decreaseCartQuantity(id)}
+    > - </button>
+    {quantity} in cart
+    <button className="button-card"
+    onClick={() => increaseCartQuantity(id)}> +</button>
+</div>
+<button className="button-card"
+onClick={() => removeFromCart(id)}
+>Remove</button>
+</>
+   
 
 )       
             }

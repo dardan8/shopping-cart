@@ -2,8 +2,13 @@ import React from 'react'
 import "./navbar.css";
 import { NavLink } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
+import { useShoppingCart } from '../context/ShoppingCartContext';
+
 
 export const Navbar = () => {
+
+    const {openCart, cartQuantity} = useShoppingCart()
+
   return (
 <nav>
 <ul>
@@ -24,9 +29,10 @@ export const Navbar = () => {
     </li>
 
 </ul>
-<button>
+<button
+onClick={openCart}>
     <FaShoppingCart className='shoppingcart-icon'/>
-    <div className='rounded-circle'>3</div>
+    <div className='rounded-circle'>{cartQuantity}</div>
 </button>
 </nav>  )
 }
