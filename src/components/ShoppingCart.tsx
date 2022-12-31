@@ -2,6 +2,7 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { CartItem } from "./CartItem";
 import storeItems from "../data/items.json";
+import "./shoppingcart.css";
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -12,8 +13,10 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   return (
     <div>
       {isOpen ? (
-        <>
-          <button onClick={closeCart}>Close</button>
+        <div className='shoppingcart-container'>
+          <button onClick={closeCart} className='close-cart'>
+            Close
+          </button>
           <div>
             {cartItems.map((item) => (
               <CartItem key={item.id} {...item} />
@@ -28,7 +31,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
               )}
             </div>
           </div>
-        </>
+        </div>
       ) : (
         ""
       )}

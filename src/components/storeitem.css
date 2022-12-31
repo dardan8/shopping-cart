@@ -1,49 +1,45 @@
 .card-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-
-
-background-color: #fefefe;
-border: 1px solid rgba(51, 51, 51, 0.446);
-width: 25rem;
-border-radius: 0.8rem;
+  background-color: #fefefe;
+  border: 1px solid rgba(51, 51, 51, 0.446);
+  width: 25rem;
+  border-radius: 0.8rem;
 }
 
 .card-image-container {
-width: 100%;
-height: 200px;
-padding: 0;
-margin: 0;
-z-index: 3
-
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  z-index: 3;
 }
 .card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.7rem 0.7rem 0 0;
-    z-index: 4;
-
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.7rem 0.7rem 0 0;
+  z-index: 4;
 }
 
 .card-item-data {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 .card-item-actions {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .button-card {
-    width: 3rem;
-background-color: #fefefe;
-color:black;
-border-radius: 1px;
-cursor: pointer;
+  width: 3rem;
+  background-color: #fefefe;
+  color: black;
+  border-radius: 1px;
+  cursor: pointer;
 }

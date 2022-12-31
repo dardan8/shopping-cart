@@ -1,13 +1,17 @@
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
+import { RiShoppingCartLine } from "react-icons/ri";
 import { useShoppingCart } from "../context/ShoppingCartContext";
+import LogoImg from "../../public/images/logo.svg";
 
 export const Navbar = () => {
   const { openCart, cartQuantity } = useShoppingCart();
 
   return (
     <nav>
+      <a href='/'>
+        <img src={LogoImg} alt='Logo' className='logo-image'></img>
+      </a>
       <ul>
         <li>
           <NavLink to='/'>Home</NavLink>
@@ -19,10 +23,10 @@ export const Navbar = () => {
           <NavLink to='/store'>Store</NavLink>
         </li>
       </ul>
-      <button onClick={openCart}>
-        <FaShoppingCart className='shoppingcart-icon' />
+      <span className='shoppingcart-span'>
+        <RiShoppingCartLine className='shoppingcart-icon' onClick={openCart} />
         <div className='rounded-circle'>{cartQuantity}</div>
-      </button>
+      </span>
     </nav>
   );
 };

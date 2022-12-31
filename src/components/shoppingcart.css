@@ -1,0 +1,19 @@
+.shoppingcart-container {
+  width: 30%;
+  height: 100vh;
+
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+
+  padding: 2rem 3rem;
+  background-color: #d9e8e5;
+  z-index: 3;
+}
+
+.close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
