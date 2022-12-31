@@ -15,9 +15,9 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
       {isOpen ? (
         <div className='shoppingcart-container'>
           <button onClick={closeCart} className='close-cart'>
-            Close
+            X
           </button>
-          <div>
+          <div className='shoppingcart-items'>
             {cartItems.map((item) => (
               <CartItem key={item.id} {...item} />
             ))}
