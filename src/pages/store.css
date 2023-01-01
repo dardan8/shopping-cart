@@ -1,12 +1,16 @@
 .store-container {
+  width: 100%;
+  min-height: 100vh;
+
+  gap: 2rem;
   display: flex;
   flex-wrap: wrap;
-
-  gap: 3rem;
   align-items: center;
   justify-content: flex-start;
 
-  padding: 0rem 5rem;
-  width: 100%;
-  height: 100%;
+  padding: 5rem 10rem;
+
+  background-color: #d9e8e577;
+  background-image: url(/public/images/grid-bg1.png);
+  background-repeat: repeat;
 }

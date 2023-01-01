@@ -24,37 +24,46 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
       <div className='card-image-container'>
         <img src={imgUrl} className='card-image' />
       </div>
+
       <div className='card-item-data'>
-        <h1>{name}</h1>
-        <h3>{formatCurrency(price)}</h3>
+        <h3>{name}</h3>
+        <h1>{formatCurrency(price)}</h1>
       </div>
+
       {quantity === 0 ? (
         <div className='card-item-actions'>
-          <button onClick={() => increaseCartQuantity(id)}>Add to Cart</button>
+          <button
+            className='addtocart-button'
+            onClick={() => increaseCartQuantity(id)}
+          >
+            Add to Cart
+          </button>
         </div>
       ) : (
-        <>
-          <div className='card-item-actions'>
+        <div className='card-item-actions-active'>
+          <div className='card-item-actionbtns'>
             <button
-              className='button-card'
+              className='actionbutton-card'
               onClick={() => decreaseCartQuantity(id)}
             >
-              {" "}
-              -{" "}
+              -
             </button>
-            {quantity} in cart
+            <span className='actionbutton-card-text'> {quantity} in cart</span>
+
             <button
-              className='button-card'
+              className='actionbutton-card'
               onClick={() => increaseCartQuantity(id)}
             >
-              {" "}
               +
             </button>
           </div>
-          <button className='button-card' onClick={() => removeFromCart(id)}>
+          <button
+            className='delete-button-card'
+            onClick={() => removeFromCart(id)}
+          >
             Remove
           </button>
-        </>
+        </div>
       )}
     </div>
   );
