@@ -14,6 +14,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     <div>
       {isOpen ? (
         <div className='shoppingcart-container'>
+          <h1>Here are your items: </h1>
           <button onClick={closeCart} className='close-cart'>
             X
           </button>
@@ -22,7 +23,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
               <CartItem key={item.id} {...item} />
             ))}
             <div>
-              Total:
+              Total:{" "}
               {formatCurrency(
                 cartItems.reduce((total, cartItem) => {
                   const item = storeItems.find((i) => i.id === cartItem.id);

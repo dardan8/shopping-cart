@@ -29,7 +29,7 @@ export function useShoppingCart() {
 }
 
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const [cartItems, setCartItems] = useLocalStorage<CartItem[]>(
     "shopping-cart",
