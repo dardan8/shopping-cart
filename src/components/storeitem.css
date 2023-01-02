@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   align-self: stretch;
-
-  background-color: rgba(255, 255, 255, 0.644);
-  border: 1px solid rgba(51, 51, 51, 0.446);
+  border: 1px solid rgba(51, 51, 51, 0.151);
   width: 20rem;
   height: 27rem;
   padding: 1rem;
   border-radius: 0.8rem;
+
+  background-color: rgba(245, 245, 245, 0.756);
 }
 
 .card-image-container {

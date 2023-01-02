@@ -1,7 +1,7 @@
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import storeItems from "../data/items.json";
 import { formatCurrency } from "../utilities/formatCurrency";
-import "./carditem.css";
+import "./cartitem.css";
 
 type CartItemProps = {
   id: number;
@@ -17,17 +17,17 @@ export function CartItem({ id, quantity }: CartItemProps) {
     <div className='cart-card-item'>
       <img src={item.imgUrl} className='card-item-image' />
       <div>
-        <div>
-          {item.name}
-          {quantity > 1 && <span> x{quantity}</span>}
-        </div>
+        {item.name}
+        {quantity > 1 && <span> x{quantity}</span>}
         <div>{formatCurrency(item.price)}</div>
       </div>
-
-      <div>
-        <div>{formatCurrency(item.price * quantity)}</div>
-        <button onClick={() => removeFromCart(item.id)}>x</button>
-      </div>
+      <div>{formatCurrency(item.price * quantity)}</div>
+      <button
+        onClick={() => removeFromCart(item.id)}
+        className='deleteitem-button'
+      >
+        x
+      </button>
     </div>
   );
 }

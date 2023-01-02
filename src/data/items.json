@@ -1,26 +1,44 @@
 [
     {
       "id": 1,
-      "name": "Book",
-      "price": 10.99,
-      "imgUrl": "/images/book.jpeg"
+      "name": "Magic Mouse",
+      "price": 80,
+      "imgUrl": "/images/mouse.webp"
     },
     {
       "id": 2,
-      "name": "Computer",
-      "price": 1199,
-      "imgUrl": "/images/computer.jpeg"
+      "name": "Laptop",
+      "price": 1699,
+      "imgUrl": "/images/laptop.jpeg"
     },
     {
       "id": 3,
-      "name": "Banana",
-      "price": 1.05,
-      "imgUrl": "/images/banana.jpeg"
+      "name": "iPhone",
+      "price": 1400,
+      "imgUrl": "/images/iphone.jpg"
     },
     {
       "id": 4,
-      "name": "Car",
-      "price": 14000,
-      "imgUrl": "/images/car.jpeg"
+      "name": "AirPods Max",
+      "price": 1000,
+      "imgUrl": "/images/airpodsmax.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "AirPods 3",
+      "price": 140,
+      "imgUrl": "/images/airpods3.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "iPad 3",
+      "price": 940,
+      "imgUrl": "/images/ipad.webp"
+    },
+    {
+      "id": 7,
+      "name": "Air Tags",
+      "price": 40,
+      "imgUrl": "/images/airtag.avif"
     }
   ]
