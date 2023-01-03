@@ -36,15 +36,23 @@
 }
 
 .home-container h1 {
-  font-size: 4.3rem;
-  color: rgb(68, 78, 76);
+  font-size: 3rem;
   line-height: 1.15;
+  background: linear-gradient(
+    99deg,
+    rgb(131, 181, 166) 0%,
+    rgba(67, 109, 103, 0.695) 77%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .home-container h3 {
-  font-size: 1.7rem;
-  font-weight: 500;
-  color: rgb(68, 78, 76);
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(46, 47, 47);
 
   line-height: 1.15;
 }
@@ -53,14 +61,15 @@
   width: 26rem;
   cursor: pointer;
 }
+
 .hero-image:hover {
   transform: rotate(10deg);
 }
 
 .shop-button-primary {
-  width: 13rem;
+  width: 12rem;
   border: 1px solid #5aab9b;
-  padding: 1rem 0;
+  padding: 0.9rem 0;
   border-radius: 1.8rem;
   background-color: #55bea9;
   color: white;
@@ -68,6 +77,7 @@
   cursor: pointer;
   position: relative;
 }
+
 .shop-button-primary:hover {
   bottom: -2px;
   background-color: #4b9283;

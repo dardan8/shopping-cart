@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className='home-container'>
       <div className='left'>
-        <h1>Shop your favorite tech tools</h1>
+        <h1>Shop your favorite tech gadgets at the best price</h1>
         <h3>
           A wide selection of all the technology tools you need to enhance your
           daily work. 100% authentic products at the best price.
