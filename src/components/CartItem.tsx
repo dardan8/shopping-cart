@@ -15,13 +15,15 @@ export function CartItem({ id, quantity }: CartItemProps) {
 
   return (
     <div className='cart-card-item'>
-      <img src={item.imgUrl} className='card-item-image' />
-      <div>
-        {item.name}
-        {quantity > 1 && <span> x{quantity}</span>}
-        <div>{formatCurrency(item.price)}</div>
+      <div className='cart-card-item-left'>
+        <img src={item.imgUrl} className='card-item-image' />
+        <div>
+          {item.name}
+          {quantity > 1 && <span> x{quantity}</span>}
+          <span>{formatCurrency(item.price)}</span>
+        </div>
+        <div>{formatCurrency(item.price * quantity)}</div>
       </div>
-      <div>{formatCurrency(item.price * quantity)}</div>
       <button
         onClick={() => removeFromCart(item.id)}
         className='deleteitem-button'
