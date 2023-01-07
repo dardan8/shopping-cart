@@ -1,7 +1,6 @@
 import "./storeitem.css";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import "../data/items.json";
 
 type StoreItemProps = {
   id: number;
