@@ -3,42 +3,42 @@
       "id": 1,
       "name": "Magic Mouse",
       "price": 80,
-      "imgUrl": "/assets/images/mouse.webp"
+      "imgUrl": "/shopping-cart/assets/images/mouse.webp"
     },
     {
       "id": 2,
       "name": "Laptop",
       "price": 1699,
-      "imgUrl": "/assets/images/laptop.jpeg"
+      "imgUrl": "/shopping-cart/assets/images/laptop.jpeg"
     },
     {
       "id": 3,
       "name": "iPhone",
       "price": 1400,
-      "imgUrl": "/assets/images/iphone.jpg"
+      "imgUrl": "/shopping-cart/assets/images/iphone.jpg"
     },
     {
       "id": 4,
       "name": "AirPods Max",
       "price": 1000,
-      "imgUrl": "/assets/images/airpodsmax.jpeg"
+      "imgUrl": "/shopping-cart/assets/images/airpodsmax.jpeg"
     },
     {
       "id": 5,
       "name": "AirPods 3",
       "price": 140,
-      "imgUrl": "/assets/images/airpods3.jpeg"
+      "imgUrl": "/shopping-cart/assets/images/airpods3.jpeg"
     },
     {
       "id": 6,
       "name": "iPad 3",
       "price": 940,
-      "imgUrl": "/assets/images/ipad.webp"
+      "imgUrl": "/shopping-cart/assets/images/ipad.webp"
     },
     {
       "id": 7,
       "name": "Air Tags",
       "price": 40,
-      "imgUrl": "/assets/images/airtag.avif"
+      "imgUrl": "/shopping-cart/assets/images/airtag.avif"
     }
   ]
