@@ -2,7 +2,7 @@ import "./navbar.css";
 import { NavLink } from "react-router-dom";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import LogoImg from "../../public/images/logo.svg";
+import LogoImg from "../../public/imgs/logo.svg";
 
 export const Navbar = () => {
   const { openCart, cartQuantity } = useShoppingCart();
