@@ -14,10 +14,10 @@ export const Navbar = () => {
       </a>
       <ul>
         <li>
-          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/shopping-cart/'>Home</NavLink>
         </li>
         <li>
-          <NavLink to='/store'>Store</NavLink>
+          <NavLink to='/shopping-cart/store/'>Store</NavLink>
         </li>
       </ul>
       <span className='shoppingcart-span'>

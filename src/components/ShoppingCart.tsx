@@ -14,15 +14,14 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
     <div>
       {isOpen ? (
         <div className='shoppingcart-container'>
-          <h1>Here are your items: </h1>
-          <button onClick={closeCart} className='close-cart'>
-            X
-          </button>
-          <div className='shoppingcart-items'>
-            {cartItems.map((item) => (
-              <CartItem key={item.id} {...item} />
-            ))}
-            <div>
+          <div className='shoppingcart-container-header'>
+            <h1> Your items: </h1>
+
+            <button onClick={closeCart} className='close-cart'>
+              X
+            </button>
+
+            <div className='shoppingcart-total'>
               Total:{" "}
               {formatCurrency(
                 cartItems.reduce((total, cartItem) => {
@@ -31,6 +30,11 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
                 }, 0)
               )}
             </div>
+          </div>
+          <div className='shoppingcart-items'>
+            {cartItems.map((item) => (
+              <CartItem key={item.id} {...item} />
+            ))}
           </div>
         </div>
       ) : (
