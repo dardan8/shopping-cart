@@ -12,12 +12,12 @@ const Home = () => {
           A wide selection of all the technology tools you need to enhance your
           daily work. 100% authentic products at the best price.
         </h3>
-        <Link to='/shopping-cart/store'>
+        <Link to='/shopping-cart/store/'>
           <button className='shop-button-primary'>Go to Store</button>
         </Link>
       </div>
       <div className='right'>
-        <Link to='/shopping-cart/store'>
+        <Link to='/shopping-cart/store/'>
           <img
             src={HeroImage}
             alt='iPhone mockup from uimaterial.com/mockups'
