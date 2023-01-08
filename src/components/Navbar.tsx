@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <a href='/'>
+      <a href='/shopping-cart'>
         <img src={LogoImg} alt='Logo' className='logo-image'></img>
       </a>
       <ul>

@@ -1,7 +1,7 @@
 .shoppingcart-container {
   width: 40%;
   height: 75%;
-  position: absolute;
+  position: fixed;
   top: 65px;
   right: 0;
   overflow-y: scroll;
